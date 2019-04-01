@@ -32,10 +32,6 @@ platform(
             name: "container-image"
             value:"docker://gcr.io/tensorflow-testing/nosla-ubuntu16.04@%s"
         }
-        properties: {
-            name: "Pool"
-            value: "default"
-        }
         """ % container_digests["ubuntu16.04"],
 )
 
@@ -50,10 +46,6 @@ platform(
         properties: {
             name: "container-image"
             value:"docker://gcr.io/tensorflow-testing/nosla-cuda10.0-cudnn7-ubuntu14.04@%s"
-        }
-        properties: {
-            name: "Pool"
-            value: "default"
         }
         """ % container_digests["cuda10.0-cudnn7-ubuntu14.04"],
 )
@@ -93,10 +85,6 @@ platform(
         properties: {
             name: "container-image"
             value:"docker://gcr.io/tensorflow-testing/nosla-cuda10.0-cudnn7-centos7@%s"
-        }
-        properties: {
-            name: "Pool"
-            value: "default"
         }
         """ % container_digests["cuda10.0-cudnn7-centos7"],
 )
